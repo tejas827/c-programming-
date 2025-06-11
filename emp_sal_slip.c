@@ -9,17 +9,17 @@ int main()
     fp=fopen("salaryslip.txt","w");
 
     printf("enter employee details=");
-    printf("ID :");
+    printf("/nID :");
     scanf("%d",&eid);
-    printf("\nenter name:");
+    printf("/n name:");
     scanf("%s",&ename);
-    printf("\nenter salary=");
+    printf("\n salary=");
     scanf("%f",&bs);
-    printf("\nenter DA=");
+    printf("\n DA=");
     scanf("%f",&da);
-    printf("\nenter HRA=");
+    printf("\n HRA=");
     scanf("%f",&hra);
-    printf("\nenter tax =");
+    printf("\n tax =");
     scanf("%f",&tax);
     sal=bs+((bs*(hra+da-tax))/100);
     fprintf(fp,"\n\t--------------Employee salary slip-------------");
